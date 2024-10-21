@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Press+Start+2P&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1b1b;
+    font-family: 'Arial', sans-serif;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #272727;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
+
+.task-form input,
+.task-form textarea {
+    padding: 18px;
+    margin-bottom: 20px;
+    border: 2px solid #e84a0e;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.task-form input:focus,
+.task-form textarea:focus {
+    outline: none;
+    border-color: #ff5656;
+    background-color: #444;
+}
+
+.submit-button {
+    padding: 14px;
+    background-color: #e84a0e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.submit-button:hover {
+    background-color: #ff5656;
+    transform: scale(1.05);
+}
+
+.submit-button:active {
+    transform: scale(0.95);
+}
+
+.view-button {
+    background-color: #3d85c6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 14px;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.view-button:hover {
+    background-color: #6ba3e6;
+    transform: scale(1.05);
+}
+
+.view-button:active {
+    transform: scale(0.95);
+}
+
+.success-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 20px;
+    z-index: 1000;
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    from { top: -50px; }
+    to { top: 0; }
+}
