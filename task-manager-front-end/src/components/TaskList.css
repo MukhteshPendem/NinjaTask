@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Press+Start+2P&display=swap');
+
+body {
+    background-color: #141414;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('naruto.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.task-list-container {
+    padding: 40px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(10, 10, 10, 0.9);
+    border-radius: 0;
+    box-shadow: none;
+    overflow-y: auto;
+}
+
+.task-list-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    color: #e84a0e;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'Press Start 2P', cursive;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+}
+
+.task-item {
+    background-color: #222;
+    border: 2px solid #206694;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px 20px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.task-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f77f00;
+    margin-bottom: 10px;
+
+    font-family: 'Press Start 2P', cursive;
+}
+
+.task-desc {
+    font-size: 10px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    word-break: break-all;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 8px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+    font-family: 'Press Start 2P', cursive;
+}
+
+.task-status {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: auto;
+    color: #50c878;
+    padding: 4px 8px;
+    border: 2px solid #50c878;
+    border-radius: 5px;
+    background-color: rgba(80, 200, 120, 0.2);
+    text-align: center;
+
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+.no-tasks {
+    font-size: 20px;
+    color: #b3b3b3;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.delete-button {
+    background-color: #a52a2a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.complete-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.complete-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
