@@ -1,0 +1,32 @@
+
+services:
+  backend:
+    build:
+      context: ./TaskManager
+    ports:
+      - '8083:8082' 
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/tasks
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=sunnychinnu
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./task-manager-front-end 
+    ports:
+      - '3000:80' 
+
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: tasks
+      MYSQL_USER: root
+      MYSQL_PASSWORD: sunnychinnu
+      MYSQL_ROOT_PASSWORD: sunnychinnu
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:

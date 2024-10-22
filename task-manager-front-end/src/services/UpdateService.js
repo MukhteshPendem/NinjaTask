@@ -3,7 +3,7 @@
 const UpdateService = async(id,data) => {
 
    try {
-       const response = await fetch(`http://localhost:8082/api/tasks/${id}`, {
+       const response = await fetch(`http://localhost:8083/api/tasks/${id}`, {
            method: "PUT",
            headers: {
                "Content-Type": "application/json"
