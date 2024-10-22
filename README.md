@@ -5,8 +5,8 @@ simple TaskManager to make yourself productive
 
 How to configure ....
 
-1. Go to docker compose file and review the port and chnage it if needed as per your available ports
+1. Go to docker compose file and review the port and change it if needed as per your available ports
 
-2. Make sure to chnage the db credentials aswell as the springboot config settings
+2. Make sure to change the db credentials aswell as the springboot config settings
 
 3. use docker-compose up --build
